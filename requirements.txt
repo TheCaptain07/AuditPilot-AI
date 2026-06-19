@@ -1,0 +1,6 @@
+pandas
+numpy
+scikit-learn
+reportlab
+matplotlib
+openai==0.28.0
