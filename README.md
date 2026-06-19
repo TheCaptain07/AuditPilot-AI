@@ -1,6 +1,6 @@
 ---
 license: mit
-title: ISO 27001 AI ASSISTANCE
+title: AI AuditPilot
 sdk: streamlit
 emoji: 🏆
 colorFrom: blue
