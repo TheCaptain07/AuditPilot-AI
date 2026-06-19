@@ -1,6 +1,8 @@
+streamlit
 pandas
 numpy
 scikit-learn
-reportlab
+plotly
 matplotlib
-openai==0.28.0
+reportlab
+openpyxl
