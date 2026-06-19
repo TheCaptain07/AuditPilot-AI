@@ -911,7 +911,7 @@ if page == "📊 Risk Register":
 
     for _, row in edited.iterrows():
 
-        try:
+try:
     l = int(float(row["Likelihood"]))
     i = int(float(row["Impact"]))
 
