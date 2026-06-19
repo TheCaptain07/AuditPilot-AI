@@ -909,18 +909,18 @@ if page == "📊 Risk Register":
 
     heat = np.zeros((5, 5))
 
-    for _, row in edited.iterrows():
+    for _, row in risk_df.iterrows():
 
-        try:
-            l = int(float(row["Likelihood"]))
-            i = int(float(row["Impact"]))
+    try:
+        l = int(float(row["Likelihood"]))
+        i = int(float(row["Impact"]))
 
-        l = max(1, min(l, 5))
-        i = max(1, min(i, 5))
+    except:
+        l = 1
+        i = 1
 
-        except:
-            l = 1
-            i = 1
+    l = max(1, min(l, 5))
+    i = max(1, min(i, 5))
 
         heat[5 - i, l - 1] += 1
 
