@@ -911,16 +911,16 @@ if page == "📊 Risk Register":
 
     for _, row in edited.iterrows():
 
-try:
-    l = int(float(row["Likelihood"]))
-    i = int(float(row["Impact"]))
+        try:
+            l = int(float(row["Likelihood"]))
+            i = int(float(row["Impact"]))
 
-    l = max(1, min(l, 5))
-    i = max(1, min(i, 5))
+        l = max(1, min(l, 5))
+        i = max(1, min(i, 5))
 
-except:
-    l = 1
-    i = 1
+        except:
+            l = 1
+            i = 1
 
         heat[5 - i, l - 1] += 1
 
